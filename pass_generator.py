@@ -2,7 +2,7 @@ import random
 import time
 import enlighten
 
-start_msg = """
+banner = """
 
 ╭━━━┳━━━┳━━━┳━━━┳╮╭╮╭┳━━━┳━━━┳━━━╮
 ┃╭━╮┃╭━╮┃╭━╮┃╭━╮┃┃┃┃┃┃╭━╮┃╭━╮┣╮╭╮┃
@@ -15,12 +15,13 @@ Discord: Nemo#1819
 Github: xNEMOx
 """
 
-print(start_msg)
+print(banner)
 pas_letters = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '!', '@']
 
 tlmn = input('Type F to generate password: ')
 tlmns = input('How many digits: ')
 
+# fake loading thing
 if tlmn == 'f' or 'F':
     pbar = enlighten.Counter(total=100, desc='Generating', unit='ticks')
     for num in range(100):
@@ -51,6 +52,6 @@ if tlmn == 'f' or 'F':
     print(''.join(random.sample(pas_letters, int(tlmns))))
 
 
-    # python3 /Users/neymatgasimli/Desktop/Python-BlockChain/pass_generator.py
+    # python3 pass_generator.py
 
     
