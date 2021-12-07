@@ -1,5 +1,5 @@
 # Python Password Generator
-I made simple password generator using python.
+I made a simple password generator using python.
 
 # Requirements Versions/Modules
 - Python 3.x
